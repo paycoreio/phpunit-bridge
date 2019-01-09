@@ -116,7 +116,6 @@ class SymfonyTestsListenerTrait
         }
 
         if (-1 === $this->state) {
-            echo "Testing $suiteName\n";
             $this->state = 0;
 
             if (!class_exists('Doctrine\Common\Annotations\AnnotationRegistry', false) && class_exists('Doctrine\Common\Annotations\AnnotationRegistry')) {
@@ -134,7 +133,6 @@ class SymfonyTestsListenerTrait
                     $this->state = 2;
 
                     if (!$this->wasSkipped = require $this->skippedFile) {
-                        echo "All tests already ran successfully.\n";
                         $suite->setTests(array());
                     }
                 }

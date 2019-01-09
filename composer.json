@@ -1,5 +1,5 @@
 {
-    "name": "paycoreio/phpunit-bridge",
+    "name": "symfony/phpunit-bridge",
     "type": "symfony-bridge",
     "description": "Symfony PHPUnit Bridge",
     "keywords": [],
